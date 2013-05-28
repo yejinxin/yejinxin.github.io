@@ -17,6 +17,10 @@
   color: #aaa;
   font-size: 80%;
 }
+
+.excerpt{
+  margin: 10px 0;
+}
   
 /* posts index */
 ul.posts {
