@@ -41,3 +41,5 @@ def foo1(arg1, arg2):
 def foo1(arg1, arg2):  
     print 'foo2', arg1, arg2
 {% endhighlight %}
+
+本文出自[{{ site.title }}]({{ post.url }})，转载请保留出处
