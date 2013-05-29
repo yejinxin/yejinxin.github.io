@@ -3,26 +3,48 @@ layout:           default
 ---
 {% if page.title %}
 <div class="page-header">
-  <h2>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
+  <h2>{{ page.title }} <small>{{ page.date | date_to_long_string }} </small></h2>
 </div>
 {% endif %}
 
 <div class="row-fluid">
-  <div class="span12">
-    {{ content }}
-  </div>
+<div class="span9">
+{{ content }}
+<div class="pagination">
+  <ul>
+  {% if page.previous %}
+	<li class="prev"><a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
+  {% else %}
+	<li class="prev disabled"><a>&larr; 上一篇</a></li>
+  {% endif %}
+	<li><a href="{{ site.JB.archive_path }}">所有归档</a></li>
+  {% if page.next %}
+	<li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+  {% else %}
+	<li class="next disabled"><a>下一篇 &rarr;</a></li>
+  {% endif %}
+  </ul>
 </div>
+<hr>
+{% include JB/comments %}
+</div>
+<div class="span3">
+{% unless page.tags == empty %}
+	<div class="sidebar-title">标签</div>
+	<ul class="tag_box">
+	{% assign tags_list = page.tags %}
+	{% include JB/tags_list %}
+    </ul>
+{% endunless %}
 
 <hr>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'yejinxin';
+<div class="sidebar-title">相关文章</div>
+<ul>
+{% for related_post in site.related_posts limit:5 %}
+	<li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+{% endfor %}
+</ul>
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<hr>
+</div>
+</div>

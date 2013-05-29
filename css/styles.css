@@ -1,12 +1,18 @@
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 940px; }
 
 .container-narrow > hr {
   margin: 30px 0; }
 
-
+.sidebar-title {
+font-weight: bold;
+border-radius: 3px 3px 3px 3px;
+padding: 3px 6px;
+width: 100%;
+background-color: #EEEEEE;
+}
 
 .post-list{
   font-size: 24px;

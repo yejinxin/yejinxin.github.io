@@ -1,14 +1,25 @@
 ---
 layout:           default
 ---
+
 {% if page.title %}
 <div class="page-header">
-  <h2>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
+    <h2>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
 </div>
 {% endif %}
 
 <div class="row-fluid">
-  <div class="span12">
-    {{ content }}
+  <div class="span9">
+	{{ content }}
+  </div>
+  <div class="span3">
+    <div class="sidebar-title">友情链接</div>
+	<ul>
+      <li><a href="http://jekyllrb.com/docs/home/" target="_blank">jekyll文档</a></li>
+	  <li><a href="https://github.com/mojombo/jekyll/wiki/sites" target="_blank">jekyll站点</a></li>
+	  <li><a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" target="_blank">liquid语法</a></li>
+	  <li><a href="http://www.pythonchallenge.com/" target="_blank">Python chanllenge</a></li>
+    </ul>
+    <hr>
   </div>
 </div>

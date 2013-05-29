@@ -2,7 +2,7 @@
 layout: post
 title: c++中ifstream一次读取整个文件
 description: c++中一次读取整个文件至char*和std::string的方法。
-tags: [cpp, string]
+tags: [C++, string]
 ---
 
 c++中一次读取整个文件的内容的方法：
