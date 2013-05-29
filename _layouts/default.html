@@ -46,8 +46,10 @@
       </footer>
     </div>
     <script type="text/javascript">
-        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F221e1ad668c9bf52685f4ef5de79a91d' type='text/javascript'%3E%3C/script%3E"));
-    </script>
+        if(document.location.hostname.search("yejinxin.github.io") !== -1){
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F221e1ad668c9bf52685f4ef5de79a91d' type='text/javascript'%3E%3C/script%3E"));
+        }
+	</script>
  </body>
 </html>
