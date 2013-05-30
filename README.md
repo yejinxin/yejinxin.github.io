@@ -1,4 +1,2 @@
-yejinxin.github.io
+[夜惊心的博客](http://yejinxin.github.io)
 ==================
-
-夜惊心的博客
