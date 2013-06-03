@@ -78,5 +78,3 @@ Vim中的寄存器(register)作用和windows中的剪贴板类似，不过Vim中
 <http://blog.sanctum.geek.nz/advanced-vim-registers/>
 
 <http://blah.blogsome.com/2006/04/27/vim_tut_register/>
-
-本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处

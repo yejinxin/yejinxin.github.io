@@ -74,5 +74,3 @@ def os_path_walk(top_dir):
    
   os.path.walk(top_dir, print_name, None)
 {% endhighlight %}
-
-本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处

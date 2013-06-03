@@ -42,5 +42,3 @@ $('#foo').trigger('click', ['Trigger']);
 
 <h4>reference</h4>
 <http://stackoverflow.com/questions/6674669/in-jquery-how-can-i-tell-between-a-programatic-and-user-click>
-
-本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处
