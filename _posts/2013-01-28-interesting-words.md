@@ -119,4 +119,4 @@ tags: [词库]
 
 全部短语排名请[点我](/resource/di-words.txt)
 
-本文出自[{{ site.title }}]({{ post.url }})，转载请保留出处
+本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处

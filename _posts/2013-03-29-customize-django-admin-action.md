@@ -106,4 +106,4 @@ batch_update.html如下：
 
 [django官方文档](https://docs.djangoproject.com/en/1.1/ref/contrib/admin/actions/)
 
-本文出自[{{ site.title }}]({{ post.url }})，转载请保留出处
+本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处

@@ -50,4 +50,4 @@ std::string contents(buffer.str());
 <h4>reference</h4>
 <http://stackoverflow.com/questions/2602013/read-whole-ascii-file-into-c-stdstring>
 
-本文出自[{{ site.title }}]({{ post.url }})，转载请保留出处
+本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处

@@ -31,4 +31,4 @@ pip和virtualenv可以很好的协同工作，同时使用这两个工具非常�
 
 5. 另外，还可以将自己的包上传至pypi服务器，分享给所有人。具体可参考<http://guide.python-distribute.org/creation.html>和<http://matrix.42qu.com/10734668>。
 
-本文出自[{{ site.title }}]({{ post.url }})，转载请保留出处
+本文出自[{{ site.title }}]({{ page.url }})，转载请保留出处
