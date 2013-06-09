@@ -33,9 +33,7 @@ sort命令时Linux中一个非常有用的命令，它常见的参数和意义�
 
     然而，有可能在Linux中，默认情况下已经是忽略大小写的排序了，这是因为[locale](http://wiki.ubuntu.org.cn/Locale)的原因。sort命令的帮助中有如下警告：
 
-    <pre>*** WARNING *** The locale specified by the  environment  affects  sort
-       order.  Set LC_ALL=C to get the traditional sort order that uses native
-       byte values.</pre>
+    <pre>*** WARNING *** The locale specified by the  environment  affects  sort order.  Set LC_ALL=C to get the traditional sort order that uses native byte values.</pre>
 
     sort命令会根据当前的locale来决定一些字符串的比较结果，这样，在不同的机器中，即使输入数据相同，也有可能因为locale不同而导致排序结果不同。因此，如果排序结果不符合预期的话，不妨`echo $LC_ALL`看看是否为C，如果不是，可以执行`export LC_ALL=C`。
 
