@@ -63,7 +63,7 @@ python setup.py sdist     # 生成pip支持的格式，下文以此为例
     <p>安装测试</p>
     <p>上传成功后，就可以使用pip来下载安装了。</p>
     <p>另外，pypi还有一个<a href="https://testpypi.python.org/pypi">测试服务器</a>，可以在这个测试服务器上做测试，测试的时候需要给命令指定额外的"-r"或"-i"选项，如<code>python setup.py register -r "https://testpypi.python.org/pypi"</code>, <code>python setup.py sdist upload -r "https://testpypi.python.org/pypi"</code>, <code>pip install -i "https://testpypi.python.org/pypi" simpletest</code>。</p>
-    <p>发布到测试服务器的时候，建议在linux或cygwin中发布，如果是在windows中，参考<a href="http://docs.python.org/2/distutils/packageindex.html#the-pypirc-file">文档</a>，需要生成.pypirc文件，参考<a href="/create-empty-filename-in-windows/">另一篇博文</a>。</p>
+    <p>发布到测试服务器的时候，建议在linux或cygwin中发布，如果是在windows中，参考<a href="http://docs.python.org/2/distutils/packageindex.html#the-pypirc-file">文档</a>，需要生成.pypirc文件，参考<a href="{{ site.url }}/create-empty-filename-in-windows/">另一篇博文</a>。</p>
     </li>
 </ul>
 
