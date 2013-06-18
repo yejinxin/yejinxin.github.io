@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux中sort命令用法
-description: Linux中sort命令的相关用法。
+description: Linux系统中sort排序命令的相关用法和参数意义。
 tags: [Linux, 排序]
 ---
 
