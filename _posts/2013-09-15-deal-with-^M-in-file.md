@@ -13,9 +13,9 @@ Linux下`cat -A filename`或`cat -v filename`就可以看到Windows文件中多�
 <!--more-->
 
 1. 使用sed：
-    `sed -i 's/^m//g' filename`
+    `sed -i 's/^M//g' filename`
 
-2. 使用tr，其中"\r"可用"^M"或"\015"代替
+2. 使用tr，其中"\r"可用"\^M"或"\015"代替
     `tr -d "\r" < filename > newfilename`
 	
 3. 使用dos2unix
