@@ -75,4 +75,4 @@ do
 done
 {% endhighlight %}
 
-以上是getopts命令的用法例子，可以看到，getopts命令式不支持长选项的。需要注意的是，还有另外一个Linux命令getopt，它可以支持长选项，但不是内置的命令，unix版本和Linux版本的用法也不一样。
+以上是getopts命令的用法例子，可以看到，getopts命令式不支持长选项的。需要注意的是，还有另外一个Linux命令getopt，它可以支持长选项，但不是内置的命令，unix版本和Linux版本的用法也不一样，用法见<a href="/parse-shell-options-with-getopt-command/" title="getopt">另一篇文章</a>。
