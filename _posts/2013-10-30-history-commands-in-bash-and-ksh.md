@@ -9,7 +9,7 @@ tags: [Linux, shell]
 
 <!--more-->
 
-{% highlight text %}
+{% highlight bash %}
 #Bash
 history          #显示历史命令
 history 10       #显示最近的10条历史命令
@@ -25,7 +25,7 @@ history 10       #显示最近的10条历史命令
                  #ESC + .  可以自动输入上一条命令的最后一个参数，按.可继续往上翻
 {% endhighlight %}
 
-{% highlight text %}
+{% highlight bash %}
 #Ksh
 history              #显示历史命令
 history 1000 1050    #显示第1000到1050条的历史命令
