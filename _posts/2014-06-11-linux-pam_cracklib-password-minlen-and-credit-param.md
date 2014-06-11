@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux中pam_cracklib.so的密码最小长度minlen和credit参数
+title: Linux中pam_cracklib.so的minlen和credit参数
 description: Linux中PAM的pam_cracklib.so库，设置密码最小长度的参数minlen和lcredit/ucredit/dcredit/ocredit参数的理解。
 tags: [Linux]
 ---
@@ -24,4 +24,4 @@ password   requisite  pam_cracklib.so  try_first_pass  retry=3  type=  ocredit=2
 另外，除了密码长度之外，pam_cracklib.so库默认还会做其它方面的简单检查，并且库代码里写死了密码最小长度不能小于6.
 
 <h4>reference</h4>
-[http://www.deer-run.com/~hal/sysadmin/pam_cracklib.html]
+<http://www.deer-run.com/~hal/sysadmin/pam_cracklib.html>
