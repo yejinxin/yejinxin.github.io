@@ -9,7 +9,7 @@ Linux中的PAM(Pluggable Authentication Modules)包含很多有用的模块，�
 
 <!--more-->
 
-{% highlight plain %}
+{% highlight bash %}
 password   requisite  pam_cracklib.so  try_first_pass  retry=3  type=  ocredit=2 minlen=10
 {% endhighlight %}
 
@@ -24,4 +24,4 @@ password   requisite  pam_cracklib.so  try_first_pass  retry=3  type=  ocredit=2
 另外，除了密码长度之外，pam_cracklib.so库默认还会做其它方面的简单检查，并且库代码里写死了密码最小长度不能小于6.
 
 <h4>reference</h4>
-<http://www.deer-run.com/~hal/sysadmin/pam_cracklib.html/>
+[http://www.deer-run.com/~hal/sysadmin/pam_cracklib.html]
