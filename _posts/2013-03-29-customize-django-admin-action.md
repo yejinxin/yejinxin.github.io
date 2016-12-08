@@ -10,7 +10,7 @@ django的admin后台管理系统中自带了一个批量删除所选对象的act
 
 我们还可以添加自定义的action来实现其它类似的功能，如批量修改某个字段的功能。简单的，例如将文章批量标记为已发布的action，如下:
 <!--more-->
-{% highlight python linenos %}
+{% highlight python %}
 from django.contrib import admin  
 from myapp.models import Article  
   
@@ -29,7 +29,7 @@ admin.site.register(Article, ArticleAdmin)
 上面例子中的action比较简单，执行action时也不需要用户输入，实际上更常见的action是需要用户的输入或选择的。例如一个model A中有个外键foreign key关联另一个model B，我希望能有一个action可以批量更改A关联的B对象。对于这种情况，django官方文档中推荐的做法是重定向至另一个View中，并将所需的item id等作为GET query参数传递过去，在另一个View中处理复杂的逻辑，如让用户输入等。
 注意到默认的删除action也是需要用户输入的（确认或取消操作），也有另外的页面，但是这个页面的url确实和原先的共用的，也就是说没有完全像文档中推荐的那样有另外一个View。是怎么做到的呢？
 直接上代码吧。
-{% highlight python linenos %}
+{% highlight python %}
 from django.contrib import admin, messages  
 from django import forms  
 from myApp.models import DataSrc  
@@ -74,7 +74,7 @@ update_data_src.short_description = u'批量修改 数据源'
 
 batch_update.html如下：
 
-{% highlight html linenos %}
+{% highlight html %}
 {% raw %}
 {% extends "admin/base_site.html" %}  
 

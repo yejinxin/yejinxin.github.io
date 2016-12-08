@@ -4,9 +4,11 @@
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "categories.html"]
 
 permalink: /:title
-pygments: true
-markdown: rdiscount
-theme: Slate
+highlight: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+#theme: minima
 
 paginate: 10
 

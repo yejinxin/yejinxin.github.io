@@ -6,7 +6,7 @@ tags: [python]
 ---
 
 普通的不带参数的装饰器，写法如下：
-{% highlight python linenos %}
+{% highlight python %}
 def debug(func):  
     def wrapper(*args, **kwargs):  
         print 'debug start'  
@@ -22,7 +22,7 @@ def foo(arg1, arg2):
 
 带参数的装饰器，写法如下：
 <!--more-->
-{% highlight python linenos %}
+{% highlight python %}
 def debug(level=1):  
     def wrapper(func):  
         def inner_wrapper(*args, **kwargs):  
