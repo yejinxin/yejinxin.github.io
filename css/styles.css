@@ -11,7 +11,6 @@ font-weight: bold;
 border-radius: 3px 3px 3px 3px;
 padding: 3px 6px;
 width: 100%;
-background-color: #EEEEEE;
 }
 
 .post-list{
@@ -85,3 +84,6 @@ ul.posts {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+code {
+  color: #21F; }
