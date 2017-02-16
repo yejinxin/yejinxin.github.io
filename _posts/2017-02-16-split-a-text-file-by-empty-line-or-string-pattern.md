@@ -2,7 +2,7 @@
 layout: post
 title: Split a text file by empty line or string pattern
 description: Split a text file by empty line or string pattern into multiple files.
-tags: [linux, awk]
+tags: [Linux, awk]
 ---
 
 Say we have a file as below, we want to split this file by empty line.
