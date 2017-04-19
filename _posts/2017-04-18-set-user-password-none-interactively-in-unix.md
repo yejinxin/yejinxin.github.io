@@ -9,9 +9,9 @@ For system administrators, it's a common task to set user's password. Often we h
 
 {% highlight bash %}
 
-# echo 'username:password' | chpasswd 
-#
-# echo 'password' | passwd --stdin username
+$ echo 'username:password' | chpasswd 
+$
+$ echo 'password' | passwd --stdin username
 
 {% endhighlight %}
 
@@ -22,7 +22,7 @@ However, if you were in a HPUX system, you will find neither `chpasswd` nor `pas
 After searching around, I got a perl script to generate encrypted password.
 
 {% highlight bash %}
-# cat mypwgen
+$ cat mypwgen
 #!/usr/bin/perl -l
 die "One arg expected\n" unless @ARGV;
 print crypt(
@@ -35,13 +35,13 @@ join( '',
 
 ...run as:
 {% highlight bash %}
-# ./mypwgen plaintextpw
+$ ./mypwgen plaintextpw
 {% endhighlight %}
 
 ...the output will be an encrypted password suitable for use with `useradd` and `usermod`.
 
 {% highlight bash %}
-# usermod -F -p ENCRYPTED username
+$ usermod -F -p ENCRYPTED username
 {% endhighlight %}
 
 The perl script above is too obscure for me, though it do work. More detailed information could be found by `man 3 crypt`. After reading that, you should know what's going on.
@@ -60,8 +60,8 @@ print crypt(sys.argv[1], choice(chars)+choice(chars))
 Alternatively, there is another quick and dirty choice.
 
 {% highlight bash %}
-# ENCRYPTED=`openssl passwd -crypt -salt ST PASSWORD`
-# usermod -Fp $ENCRYPTED username
+$ ENCRYPTED=`openssl passwd -crypt -salt ST PASSWORD`
+$ usermod -Fp $ENCRYPTED username
 {% endhighlight %}
 
 All the methods above can be easily adopted to Linux/AIX too. By the way, `usermod -p` can also be used to recover password, if you have a backup.
