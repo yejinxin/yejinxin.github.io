@@ -10,6 +10,8 @@ kramdown:
   input: GFM
 #theme: minima
 
+future: true
+
 paginate: 10
 
 # Themes are encouraged to use these universal variables 
