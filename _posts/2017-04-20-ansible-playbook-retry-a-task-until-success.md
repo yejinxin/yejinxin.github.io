@@ -5,7 +5,7 @@ description: This article describes how to set a task to retry for several times
 tags: [ansible]
 ---
 
-When writing ansible playbook, there is a scene when a task should be delayed for seconds to run. But you do not know how long it should be. In this case, we want to delay this task for seconds, and retry it for times. 
+When writing ansible playbook, there is a scene when a task should be delayed for seconds to run. But you do not know how long it should be. In this case, we want to delay this task for seconds, and retry it for several times. 
 
 Here is an example to archive that.
 
